@@ -1,12 +1,39 @@
 /* Mobile s */
-@media screen and (min-width 600px) {
+@media screen and (min-width: 600px) {
+    :root {
+        --sidebar-widht: 200px
+    }
 
+    /* Sidebar */
+
+    .sidebar {
+        padding: 10px 20px;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+
+    .logo-full {
+        display: inline-block;
+        width: 70%;
+    }
+
+    .sidebar-nav span {
+        display: inline;
+    }
 }
+
 /* Tablet md */
-@media screen and (min-width 700px) {
-
+@media screen and (min-width: 700px) {
+    .col {
+        width: calc(100% / 4 - (10px * 3) / 4);
+    }
 }
-/* Desktop lg */
-@media screen and (min-width 1100px){
 
+/* Desktop lg */
+@media screen and (min-width: 1100px) {
+    .col {
+        width: calc(100% / 6 - (10px * 5) / 6);
+    }
 }
