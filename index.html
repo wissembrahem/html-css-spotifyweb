@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/resposive.css">
 </head>
@@ -25,7 +28,7 @@
                 </div>
 
                 <!-- Sidebar nav -->
-                <ul>
+                <ul class="sidebar-nav mb-20">
                     <li><a href=""><img src="./spotify/img/home.svg" alt="" />
                             <span>Home</span>
                         </a>
@@ -35,42 +38,107 @@
                     <li><a href=""><img src="./spotify/img/libreria.svg" alt="" />
                             <span>La tua libreria</span></a></li>
                 </ul>
+
+                <!-- Playlist -->
+                <div class="playlist">
+                    <h4 class="mb-10">PLAYLIST</h4>
+                    <a class="ancor mb-10" href="">
+                        <span class="plus">+</span>
+                        <span>Crea playlist</span>
+                    </a>
+                    <ul>
+                        <li><a href="">Nuova playlist</a></li>
+                        <li><a href="">Nuova playlist</a></li>
+                        <li><a href="">Nuova playlist</a></li>
+                        <li><a href="">Nuova playlist</a></li>
+                    </ul>
+                </div>
+
+                <div class="profile">
+                    <a class="download mb-10" href="">
+                        <img src="./spotify/img/download.svg" alt="">
+                        <span>installa app</span>
+                    </a>
+                    <hr class="mb-10">
+                    <a class="user" href="">
+                        <img src="./spotify/img/profile.svg" alt="">
+                        <span>John Doe</span>
+                    </a>
+                </div>
             </div>
             <!-- Fine sidebar -->
             <!-- Content -->
             <div class="content">
-                <header>headerrrrrr</header>
+                <header>
+                    <a class="cta" href="">Effettua l'upgrade</a>
+                </header>
                 <main>
-                    <nav class="main-nav">
+                    <nav class="main-nav mb-20">
                         <ul>
-                            <li><a href="">Link</a></li>
-                            <li><a href="">Link</a></li>
-                            <li><a href="">Link</a></li>
-                            <li><a href="">Link</a></li>
-                            <li><a href="">Link</a></li>
-                            <li><a href="">Link</a></li>
+                            <li><a href="">IN EVIDENZA</a></li>
+                            <li><a href="">PODCAST</a></li>
+                            <li><a href="">CLASSIFICHE</a></li>
+                            <li><a href="">GENERI E MOOD</a></li>
+                            <li><a href="">NUOVE USCITE</a></li>
+                            <li><a href="">SCOPRI</a></li>
                         </ul>
                     </nav>
 
                     <!-- Recently played -->
-                    <section>
-                        <h2>Recently played</h2>
+                    <section class="mb-20">
+                        <h2 class="mb-20">Recently played</h2>
                         <div class="flex">
-                            <div class="col"></div>
-                            <div class="col"></div>
-                            <div class="col"></div>
-                            <div class="col"></div>
-                            <div class="col"></div>
-                            <div class="col"></div>
+                            <div class="col">
+                                <div class="album-img">
+                                    <img src="./spotify/img/metal_lifting.jpg" alt="">
+                                    <div class="overlay">
+                                    <i class="fa-solid fa-circle-play"></i></div>
+                                </div>
+                                <h3>Heavy metal</h3>
+                                <p>subtitle</p>
+                            </div>
+                            <div class="col">
+                                <img src="./spotify/img/stranger.jpeg" alt="">
+                                <h3>Stranger things</h3>
+                                <p>kyle davis &co</p>
+                            </div>
+                            <div class="col">
+                                <img src="./spotify/img/aquietplace.jpeg" alt="">
+                                <h3>A quit place</h3>
+                                <p>subtitle</p>
+                            </div>
+                            <div class="col">
+                                <img src="./spotify/img/split.jpeg" alt="">
+                                <h3>split</h3>
+                                <p>subtitle</p>
+                            </div>
+                            <div class="col">
+                                <img src="./spotify/img/cure.jpeg" alt="">
+                                <h3>A cure</h3>
+                                <p>subtitle</p>
+                            </div>
+                            <div class="col">
+                                <img src="./spotify/img/sinister.jpeg" alt="">
+                                <h3>Sinister</h3>
+                                <p>subtitle</p>
+                            </div>
                         </div>
                     </section>
 
                     <!-- Creato per te -->
-                    <section>
+                    <section class="mb-20">
                         <h2>Creato per John Doe</h2>
                         <div class="flex">
-                            <div class="col"></div>
-                            <div class="col"></div>
+                            <div class="col">
+                                <img src="./spotify/img/radar.jpeg" alt="">
+                                <h3>radar day</h3>
+                                <p>subtitle</p>
+                            </div>
+                            <div class="col">
+                                <img src="./spotify/img/mixdaily.jpeg" alt="">
+                                <h3>mixdaily</h3>
+                                <p>subtitle</p>
+                            </div>
                         </div>
                     </section>
 
@@ -78,8 +146,16 @@
                     <section>
                         <h2>Artisti più popolari</h2>
                         <div class="flex">
-                            <div class="col"></div>
-                            <div class="col"></div>
+                            <div class="col">
+                                <img src="./spotify/img/youg.jpeg" alt="">
+                                <h3>Lana del ray</h3>
+                                <p>subtitle</p>
+                            </div>
+                            <div class="col">
+                                <img src="./spotify/img/player_left.jpg" alt="">
+                                <h3>The player</h3>
+                                <p>subtitle</p>
+                            </div>
                         </div>
                     </section>
                 </main>
@@ -88,7 +164,11 @@
         </div>
         <!-- Fine top container -->
         <!-- Action bar -->
-        <footer class="action-bar"> barra sottostante</footer>
+        <footer class="action-bar">
+            <div class="album">Album</div>
+            <nav class="player">Player</nav>
+            <div class="audio">audio</div>
+        </footer>
         <!-- Fine action bar -->
     </div>
 </body>

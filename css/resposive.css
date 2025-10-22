@@ -1,7 +1,7 @@
 /* Mobile s */
 @media screen and (min-width: 600px) {
     :root {
-        --sidebar-widht: 200px
+        --sidebar-width: 200px
     }
 
     /* Sidebar */
@@ -22,6 +22,36 @@
     .sidebar-nav span {
         display: inline;
     }
+
+    .playlist > * {
+    display: block;
+}
+
+.ancor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.plus {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.profile a {
+    justify-content: flex-start;
+}
+
+.profile span {
+    display: inline;
+}
 }
 
 /* Tablet md */

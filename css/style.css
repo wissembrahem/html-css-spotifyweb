@@ -3,7 +3,9 @@
     --sidebar-width: 60px;
 }
 
-/* RESET */
+/* 
+ * RESET 
+ */
 * {
     margin: 0;
     padding: 0;
@@ -42,10 +44,12 @@ ul {
 }
 
 .sidebar {
-    color: white;
+    color: gray;
     width: var(--sidebar-width);
     background-color: black;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
@@ -59,26 +63,46 @@ ul {
 .action-bar {
     height: var(--actionbar-heigth);
     background-color: violet;
+    display: flex;
+    justify-content: space-between;
 } 
 
 /* Utilities */
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
 .mb-20 {
     margin-bottom: 20px;
 }
 
 /* Header */
 header {
-    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
     position: sticky;
     top: 0;
     left: 0;
     background-color: rgb(0, 0, 0);
+    padding: 0 10px;
 }
 
 /* Main */
 
 .main {
     padding: 20px;
+}
+
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 40px;
+    text-transform: uppercase;
 }
 
 .main-nav ul {
@@ -99,10 +123,28 @@ header {
 
 .col {
     width: calc(100% / 2 - 10px / 2);
-    /*debug*/
-    background-color: lightgray;
-    min-height: 200px;
 }
+
+.album-img {
+position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem
+    }
+    
+    .album-img:hoover .overlay {
+        display: flex;
+    }
 
 /* Sidebar */
 .logo-full {
@@ -123,4 +165,54 @@ header {
 .sidebar-nav img 
 .sidebar-nav span {
 vertical-align: middle;
+}
+
+
+.playlist {
+    min-height: 200px;
+    flex-grow: 1;
+}
+
+
+.playlist li {
+    margin-bottom: 10px;
+}
+
+.playlist > * {
+    display: none;
+}
+
+.profile a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.download img {
+    width: 20px;
+}
+
+.user img {
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+
+.profile span {
+    display: none;
+}
+
+/* Footer */
+.album,
+.audio {
+    width: 250px;
+    background-color: lightsalmon;
+}
+
+.player {
+    width: 35%;
+    background-color: green;
 }
